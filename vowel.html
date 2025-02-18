@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+var str=prompt("enter the input","");
+if(is NaN(str))
+{
+str=str.toUpperCase();
+for(var i=0;i<str.length;i++)
+{
+var ch=str.CharAt(i);
+if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+break;
+}
+if(i<str.length)
+alert("the position of the left most vowel is"+(i+1));
+else
+alert("No vowel found in the entered string");
+}
+else
+{
+var num,rev=0,remainder;
+num=parseInt(str);
+while(num!=0)
+{
+remainder=num%10;
+num=parseInt(num/10);
+rev=rev*10+remainder;
+}
+alert("reverse of"+str+"is"+rev);
+}
+</script>
+</body>
+</html>
